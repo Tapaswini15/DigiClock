@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <link rel="stylesheet" href="styles/index.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+
+    <div class="navigationBar">
+      <nav class="navbar navbar-expand-lg bg-dark">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ms-auto nav justify-content-end">
+
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html"> Home </a> </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+<div class="proibido-selecionar">
+    <div class="title">Piano</div>
+
+    <div class="piano">
+        <div data-nota="C" class="tecla branca">C</div>
+        <div data-nota="Db" class="tecla preta"></div>
+        <div data-nota="D" class="tecla branca">D</div>
+        <div data-nota="Eb" class="tecla preta"></div>
+        <div data-nota="E" class="tecla branca">E</div>
+        <div data-nota="F" class="tecla branca">F</div>
+        <div data-nota="Gb" class="tecla preta"></div>
+        <div data-nota="G" class="tecla branca">G</div>
+        <div data-nota="Ab" class="tecla preta"></div>
+        <div data-nota="A" class="tecla branca">A</div>
+        <div data-nota="Bb" class="tecla preta"></div>
+        <div data-nota="B" class="tecla branca">B</div>
+         <div data-nota="C" class="tecla branca">C</div>
+        <div data-nota="Db" class="tecla preta"></div>
+        <div data-nota="D" class="tecla branca">D</div>
+        <div data-nota="Eb" class="tecla preta"></div>
+        <div data-nota="E" class="tecla branca">E</div>
+    </div>
+
+    <div id="container">
+        <div class="botoes">
+            <button class="botao" onclick="doremifa()">Do-Ré-Mi-Fá</button>
+        </div>
+
+        <div class="botoes">
+            <button class="botao" onclick="brilhaBrilhaEstrelinha()">Brilha brilha estrelinha</button>
+        </div>
+
+        <div class="botoes">
+            <button class="botao" onclick="maryHadALittleLamb()">Mary had a little Lamb</button>
+        </div>
+        
+        <div class="botoes">
+            <button class="botao" onclick="parabensPraVoce()">Parabéns pra você</button>
+        </div>
+        <div class="botoes">
+            <button class="botao_stop" onclick="stop_song()">STOP</button>
+        </div>
+    </div>
+
+
+    <div class="rodape">
+        <a href="https://github.com/Tapaswini15">Designed by Tapaswini Tripathy</a>
+    </div>
+
+    <div class="notas">
+        <audio id="C" src="assets/notas/C.mp3"></audio>
+        <audio id="Db" src="assets/notas/Db.mp3"></audio>
+        <audio id="D" src="assets/notas/D.mp3"></audio>
+        <audio id="Eb" src="assets/notas/Eb.mp3"></audio>
+        <audio id="E" src="assets/notas/E.mp3"></audio>
+        <audio id="F" src="assets/notas/F.mp3"></audio>
+        <audio id="Gb" src="assets/notas/Gb.mp3"></audio>
+        <audio id="G" src="assets/notas/G.mp3"></audio>
+        <audio id="Ab" src="assets/notas/Ab.mp3"></audio>
+        <audio id="A" src="assets/notas/A.mp3"></audio>
+        <audio id="Bb" src="assets/notas/Bb.mp3"></audio>
+        <audio id="B" src="assets/notas/B.mp3"></audio>
+        <audio id="Pausa" src=""></audio>
+    </div>
+</body>
+
+<script src="scripts/index.js" defer></script>
+</html>
